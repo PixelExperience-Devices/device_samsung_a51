@@ -18,7 +18,7 @@
 $(call inherit-product, device/samsung/a51/device.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 ## Inherit some common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 29
@@ -32,7 +32,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 	PRIVATE_BUILD_DESC="a51nsxx-user 13 TP1A.220624.014 A515FXXU5GVK6 release-keys"
 
 ## Device configuration
-PRODUCT_NAME := lineage_a51
+PRODUCT_NAME := aosp_a51
 PRODUCT_DEVICE := a51
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-A515F
